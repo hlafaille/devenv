@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t devcontainer . && docker run --rm -it --hostname devcontainer -v devcontainer-workspace:/workspace devcontainer
+docker build -t devenv . && docker run --rm -it --hostname devenv -v devenv_workspace:/workspace devenv
