@@ -1,9 +1,11 @@
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
 return {
   {
     "neovim/nvim-lspconfig",
     config = function()
       require("lspconfig").gopls.setup{
-        -- same configuration as above
+	capabilities = capabilities,	
       }
     end
   },
