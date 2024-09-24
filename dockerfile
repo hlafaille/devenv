@@ -55,7 +55,6 @@ FROM languages AS neovim
 # install nvim
 RUN curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
 RUN tar -C /opt -xzf nvim-linux64.tar.gz
-COPY nvim /home/dev/.config/nvim
 USER root
 
 

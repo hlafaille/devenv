@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t devenv . && docker run --rm -it --hostname devenv -v devenv_workspace:/workspace -v ~/.ssh:/home/dev/.ssh -v ~/.gitconfig:/home/dev/.gitconfig devenv
+docker build -t devenv . && docker run --rm -it --hostname devenv -v devenv_workspace:/workspace -v ~/.ssh:/home/dev/.ssh -v ~/.gitconfig:/home/dev/.gitconfig -v ./nvim:/home/dev/.config/nvim devenv
